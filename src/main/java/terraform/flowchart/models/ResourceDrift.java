@@ -5,18 +5,9 @@ import java.util.Map;
 
 import terraform.flowchart.models.minorModels.*;
 
-import com.google.gson.annotations.SerializedName;
 
-public class ResourceDrift {
 
-    private List<ResourceDriftValues> resource_drift;
-
-    @SerializedName("resource_drift")
-    public List<ResourceDriftValues> getConfiguration() {
-        return resource_drift;
-    }
-
-    public class ResourceDriftValues {
+    public class ResourceDrift {
 
         private String address;
         private String mode;
@@ -503,4 +494,3 @@ public class ResourceDrift {
             }
         }
     }
-}

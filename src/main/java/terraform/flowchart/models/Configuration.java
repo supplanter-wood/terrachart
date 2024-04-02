@@ -2,18 +2,9 @@ package terraform.flowchart.models;
 
 import java.util.List;
 
-import com.google.gson.annotations.SerializedName;
+    
 
 public class Configuration {
-
-    private ConfigurationValues configuration;
-
-    @SerializedName("configuration")
-    public ConfigurationValues getConfiguration() {
-        return configuration;
-    }
-
-    public static class ConfigurationValues {
 
         private ProviderConfig provider_config;
         private RootModule root_module;
@@ -25,7 +16,7 @@ public class Configuration {
         public RootModule getRootModule() {
             return root_module;
         }
-    }
+    
 
     public static class ProviderConfig {
 

@@ -4,15 +4,8 @@ import java.util.List;
 import java.util.Map;
 import terraform.flowchart.models.minorModels.ResourcePort;
 
-public class PlannedValues {
 
-    private PlannedRoot planned_values;
-
-    public PlannedRoot getConfiguration() {
-        return planned_values;
-    }
-
-    public static class PlannedRoot {
+    public class PlannedValues {
 
         private Outputs outputs;
         private RootModule root_module;
@@ -26,7 +19,7 @@ public class PlannedValues {
         public RootModule getRootModule() {
             return root_module;
         }
-    }
+    
 
     public class Outputs {
         private ContainerId container_id;

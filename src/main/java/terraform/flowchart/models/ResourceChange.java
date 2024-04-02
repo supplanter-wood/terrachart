@@ -6,15 +6,7 @@ import java.util.Map;
 import terraform.flowchart.models.minorModels.NetworkData;
 import terraform.flowchart.models.minorModels.ResourcePort;
 
-public class ResourceChange {
-
-    private List<ResourceChangeSection> resource_changes;
-
-    public List<ResourceChangeSection> getConfiguration() {
-        return resource_changes;
-    }
-
-    public class ResourceChangeSection {
+    public class ResourceChange {
         public String address;
         public String mode;
         public String type;
@@ -49,24 +41,22 @@ public class ResourceChange {
         public class Change {
             private List<String> actions;
             private After after;
-            private boolean before;
-            private boolean before_sensitive;
 
             public List<String> getActions() {
                 return actions;
             }
 
-            public boolean isBefore() {
-                return before;
-            }
+            // public boolean isBefore() {
+            //     return before;
+            // }
 
             public After getAfter() {
                 return after;
             }
 
-            public boolean isBeforeSensitive() {
-                return before_sensitive;
-            }
+            // public boolean isBeforeSensitive() {
+            //     return before_sensitive;
+            // }
 
             public class After {
                 private boolean attach;
@@ -689,4 +679,4 @@ public class ResourceChange {
             }
         }
     }
-}
+

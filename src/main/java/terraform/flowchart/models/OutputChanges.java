@@ -2,27 +2,19 @@ package terraform.flowchart.models;
 
 import java.util.List;
 
-public class OutputChanges {
-
-    private OutputValues output;
-
-    public OutputValues getOutputValues() {
-        return output;
-    }
-
-    public class OutputValues {
-        private ContainerId containerId;
-        private ImageId imageId;
+    public class OutputChanges {
+        private ContainerId container_id;
+        private ImageId image_id;
         private Name name;
 
         // Getter for 'container_id'
         public ContainerId getContainerId() {
-            return containerId;
+            return container_id;
         }
 
         // Getter for 'image_id'
         public ImageId getImageId() {
-            return imageId;
+            return image_id;
         }
 
         // Getter for 'name'
@@ -125,4 +117,4 @@ public class OutputChanges {
             }
         }
     }
-}
+
