@@ -11,8 +11,7 @@ public class TerraformPlan {
         boolean errored;
         String format_version;
         String terraform_version;
-
-
+        
         PlannedValues planned_values = new PlannedValues();
         Configuration configuration = new Configuration();
         PriorState prior_state = new PriorState();

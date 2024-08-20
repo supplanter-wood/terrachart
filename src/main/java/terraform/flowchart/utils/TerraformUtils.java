@@ -16,7 +16,7 @@ public class TerraformUtils {
 
     }
 
-    public static TerraformPlan foundationPlan(String input) {
+    public static TerraformPlan rootPlan(String input) {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         TerraformPlan tfPlan = gson.fromJson(input, TerraformPlan.class);
         return tfPlan;
